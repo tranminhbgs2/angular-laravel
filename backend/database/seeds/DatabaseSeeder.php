@@ -1,5 +1,6 @@
 <?php
 
+use App\Model\Product;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,5 +13,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
+//        $this->call(LaratrustSeeder::class);
+        factory(Product::class,2)->create();
     }
 }
